@@ -1,4 +1,4 @@
-# H1 Title
+# 404 - You're Seeing This Because We Cannot Find That Wiki Page
 
 ## H2 Title
 ### H3 Title
@@ -7,13 +7,16 @@
 
 This is a paragraph 
 
-*Italic Text* 
+*Italic Text*
+
 **Bold Text**
+
 ***Bold Italic Text***
 
 [Link](https://github.com/maxmulder03/BlueNucleusWiki)
 
 > Blockquote
+
 >> Nested Blockquote
 
 > Block Quote With Other Items
@@ -42,7 +45,7 @@ Javascript Block Code
 ```javascript
 function helloWorld() {
   console.log("Hello World");
-}
+}```
 
 ![Image](/assets/images/logo.png)
 
