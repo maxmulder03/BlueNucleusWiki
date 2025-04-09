@@ -1,4 +1,7 @@
-# 404 - You're Seeing This Because We Cannot Find That Wiki Page
+# 404 
+## You're Seeing This Because We Cannot Find That Wiki Page
+
+Here's a markdown guide! 
 
 ## H2 Title
 ### H3 Title
