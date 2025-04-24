@@ -55,9 +55,9 @@ To start this project will be a static site built completely with frontend techn
 
 ### Some example personal websites for inspiration
 Here are a couple examples you can use for inspiration. If you don't want to be a designer then you don't have to be. You can keep your page professional and simple if you'd like.
-- [](https://stantyan.com/#)
-- [](https://arhaan-dev.vercel.app/)
-- [](https://www.erenaygun.com/)
-- [](https://ironclad.sh/) 
-- [](https://daverupert.com/)
-- [](https://www.taniarascia.com/)
+- [https://stantyan.com/#](https://stantyan.com/#)
+- [https://arhaan-dev.vercel.app/](https://arhaan-dev.vercel.app/)
+- [https://www.erenaygun.com/](https://www.erenaygun.com/)
+- [https://ironclad.sh/](https://ironclad.sh/) 
+- [https://daverupert.com/](https://daverupert.com/)
+- [https://www.taniarascia.com/](https://www.taniarascia.com/)
