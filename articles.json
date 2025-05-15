@@ -10,7 +10,7 @@
     "publishDate": "2024-01-15"
   },
   {
-    "name": "Demos April 2025",
+    "name": "Demos - April 2025",
     "author": "Max Mulder",
     "publishDate": "2024-00-15"
   },
@@ -18,6 +18,11 @@
     "name": "New Hire Onboarding",
     "author": "Max Mulder",
     "publishDate": "2025-02-15"
+  },
+  {
+    "name": "React Onboarding",
+    "author": "Max Mulder",
+    "publishDate": "2025-03-15"
   },
   {
     "name": "Personal Website Spec",
