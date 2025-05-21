@@ -1,0 +1,32 @@
+name: Generate Article Metadata
+
+# Controls when the workflow will run
+on:
+  push:
+    branches: [ "main" ]
+  
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-actions[bot]'
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - name: set up Node.js env
+        run: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Run metadata generation script
+        # Execute the JavaScript script
+        run: node .github/workflows/generate_metadata.js
+
+      - name: Commit and Push generated metadata.json
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'ci: Auto-generated article metadata (no deps)'
+          file_pattern: 'metadata.json'
