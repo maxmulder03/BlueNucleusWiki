@@ -1,6 +1,6 @@
 # CSS Roadmap
 
-This is a quick roadmap for learning the fundamentals of CSS, tailwindcss, and how we'll be using it in the clinic. This doc is not comprehensive, but it should give you enough to be productive with CSS.
+*This is a quick roadmap for learning the fundamentals of CSS, tailwindcss, and how we'll be using it in the clinic. This doc is not comprehensive, but it should give you enough to be productive with CSS.*
 
 **Tip:** CSS is very feature rich so it isn't feasible to read through the entire spec to understand everything. A lot of your learning will happen as you try to implement ideas you don't understand yet. Ask LLMs & refer to MDN docs as much as possible while you work!
 
