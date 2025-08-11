@@ -1,0 +1,25 @@
+name: Update Articles JSON
+
+on: 
+  push:
+    paths: 
+      - /BlueNucleusWiki-main/articles.json
+jobs:
+  update-article-json:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+    -name: checkout article repository
+    uses: actions/checkout@v4
+
+    -name: Update articles JSON
+    run: echo jq '.name = title | .author = authorname | .publishDate = datepublished >> articles.json
+
+    -name: Commit and push changes
+    uses: /git-commit-m/git-push
+    with:
+      commit-message: "Updated articles.json sucessfully!"
+      file-pattern: "articles.json"
+
