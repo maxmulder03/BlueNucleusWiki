@@ -13,6 +13,8 @@ jobs:
     steps:
     -name: checkout article repository
     uses: actions/checkout@v4
+    with: 
+      ref: main
 
     -name: Update articles JSON
     run: echo jq '.name = title | .author = authorname | .publishDate = datepublished >> articles.json
