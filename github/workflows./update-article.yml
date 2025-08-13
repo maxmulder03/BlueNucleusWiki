@@ -21,7 +21,7 @@ jobs:
     run: echo jq '.name = title | .author = authorname | .publishDate = datepublished | .updateDate = dateupdated >> articles.json'
 
     -name: Commit and push changes
-    uses: /git-commit-m/git-push/git-status
+    uses: /git-commit-m/git-push/git-diff
     with:
       commit-message: "Updated articles.json sucessfully!"
       file-pattern: "articles.json"
