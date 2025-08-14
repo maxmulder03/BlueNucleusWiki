@@ -12,15 +12,15 @@ jobs:
       contents: write
     
     steps:
-    -name: checkout article repository
+    name: checkout article repository
     uses: actions/checkout@v4
     with: 
       ref: feature
 
-    -name: Update articles JSON
+    name: Update articles JSON
     run: echo jq '.name = title | .author = authorname | .publishDate = datepublished | .updateDate = dateupdated >> articles.json'
 
-    -name: Commit and push changes
+    name: Commit and push changes
     uses: /git-commit-m/git-push/git-diff
     with:
       commit-message: "Updated articles.json sucessfully!"
