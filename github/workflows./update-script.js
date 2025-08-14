@@ -11,7 +11,7 @@ import "update-article.yml"
     },
     {
         updateArticleJson: {
-            runs: "ubuntu-latest"
+            runs: "ubuntu-latest",
             permissions: {
                 contents: "write"
             },
@@ -21,13 +21,13 @@ import "update-article.yml"
             with: {
                 ref: "feature"
             },
-            names: "Update articles JSON"
-            run: "echo jq '.name = title | .author = authorname | .publishDate = datepublished | .updateDate = dateupdated >> articles.json'"
-            final: "Commit and push changes"
-            use: "/git-commit-m/git-push/git-diff"
+            names: "Update articles JSON",
+            run: "echo jq '.name = title | .author = authorname | .publishDate = datepublished | .updateDate = dateupdated >> articles.json'",
+            final: "Commit and push changes",
+            use: "/git-commit-m/git-push/git-diff",
             within: {
-                commit-message: "Updated articles.json sucessfully!"
-                file-pattern: "articles.json"
+                commit_message: "Updated articles.json sucessfully!",
+                file_pattern: "articles.json"
             }
         }
     }
